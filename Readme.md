@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Якушин](https://up.htmlacademy.ru/adaptive/19/user/1326055).
-* Наставник: `Неизвестно`.
+* Наставник: [Неизвестно](https://htmlacademy.ru/profile/nikita_rogatnev)
 
 ---
 
