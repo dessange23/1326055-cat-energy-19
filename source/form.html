@@ -31,13 +31,100 @@
       </div>
    </nav>
 </header>
+<section class="container container--ident">
+   <form class="form__container" action="https://echo.htmlacademy.ru" method="post">
+      <h1 class="form__heading">Подбор программы</h1>
+      <fieldset class="form__fieldset form__fieldset--parameter">
+         <legend class="form__legend">Заполните анкету и мы подберем программу питания для вашего кота</legend> 
+         <div class="form_section">
+            <label class="form__" for="name">Имя</label>
+            <input id="name" placeholder="Барсик" type="text" name="name">
+         </div> 
+         <div>
+            <label for="weight">Вес (кг):*</label>
+            <input id="weight" placeholder="7" type="text" name="weight">
+         </div>
+         <div>
+            <label for="age">Возраст (лет):</label>
+            <input id="age" placeholder="7" type="text" name="age">
+         </div>
+      </fieldset>
+      <ul>
+          <li class="filter-option">
+            <input type="radio" name="feature" value="get-slim" id="filter-slim" checked>
+            <label for="filter-slim">Похудение</label>
+          </li>
+          <li class="filter-option">
+            <input type="radio" name="feature" value="weight-gain" id="filter-weight" >
+            <label for="filter-weight">Набор массы</label>
+          </li>
+          <li class="filter-option">
+            <input type="radio" name="feature" value="dont-know" id="filter-dont-know">
+            <label for="filter-dont-know">Не знаю(нужен ваш совет)</label>
+          </li>
+        </ul>
+        <fieldset> 
+         <h2>Контактные данные (владельца кота)</h2>
+         <div>
+            <label for="mail">E-mail:*</label>
+            <input id="mail" placeholder="kuklachev@gmail.com" type="text" name="mail">
+            <button type="button" aria-label="отписать на почту"></button>
+         </div> 
+         <div>
+            <label for="phone">Вес (кг):*</label>
+            <input id="phone" placeholder="8 (960) 900-60-90" type="text" name="phone">
+            <button type="button" aria-label="позвонить по номеру"></button>
+         </div>
+      </fieldset>
+
+      <fieldset> 
+         <h2>Комментарий</h2> 
+         <textarea name="comment" cols="30" rows="5"></textarea>
+      </fieldset>
+
+      <fieldset>  
+         <h2>Дополнительно</h2> 
+         <ul>
+            <li>
+              <input type="checkbox" name="sweetener" id="filter-sweetener" checked>
+              <label for="filter-sweetener">Сахарозаменитель</label>
+           </li>
+           <li>
+            <input type="checkbox" name="water" id="filter-water">
+            <label for="filter-water">Питьевая вода</label>
+         </li>
+         <li>
+            <input type="checkbox" name="milk" id="filter-milk">
+            <label for="filter-milk">Молоко</label>
+         </li>
+         <li>
+            <input type="checkbox" name="vitamins" id="filter-vitamins">
+            <label for="filter-vitamins">Витамины</label>
+         </li>
+       </ul>
+          <button type="submit">Отправить заявку</button>
+          <p>*-Обязательные поля</p>
+
+      </fieldset>
+   </form>
+</section>
+   <div class="container container--ident">
+          <section class="invitation">
+            <h2 class="invitation__title">приглашаем <br> к сотрудничеству  дилеров!</h2>
+            <p class="invitation__text">ул. Большая Конюшенная, д. 19/8  <span>Санкт-Петербург</span></p>
+          </section>
+        </div>
+        <div class="map__iframe" id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.320894615651014!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523735281602"  allowfullscreen></iframe>
+        </div>
+      </div>
 <footer class="page-footer">
    <div class="page-footer__wrapper">
       <div class="page-footer__logo logo">
          <a class="logo__link" href="index.html"><img class="logo__link-image" src="img/logo-footer.svg" width="130" height="25" alt="логотип футера">
          </a>
       </div>
-      <div class="page-footer_social social">
+      <div class="page-footer_social">
          <ul class="social__list">
             <li class="social__item"><a class="social__link social__link--vk">Мы в контакте</a></li>
             <li class="social__item"><a class="social__link social__link--instagram">Мы в инстаграме</a></li>
