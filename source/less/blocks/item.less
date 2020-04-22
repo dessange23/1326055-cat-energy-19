@@ -2,6 +2,7 @@
 .item 
 {
 display: flex;
+padding: 0 20px;
 
 }
 
@@ -25,5 +26,34 @@ line-height:20px;
 text-transform: uppercase;
 background-color:@green-color;
 color: #ffffff;
+
+}
+
+
+@media (min-width: @tablet-width){
+
+.item {
+width: 324px;
+padding: 0;
+}
+
+
+
+
+
+}
+
+
+@media (min-width: @desktop-width) {
+
+.item {
+width: 245px;
+padding: 0;
+}
+
+
+
+
+
 
 }

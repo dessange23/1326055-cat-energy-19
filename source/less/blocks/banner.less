@@ -1,26 +1,36 @@
 .banner{
+
+}
+
+.banner__container{
 width: 320px;
 margin: 0 auto;
 background-image: url("../img/index-background-mobile@1x.jpg");
 background-repeat: no-repeat;
-min-height: 480px;
-}
+text-align: center;
 
+}
 
 
 .banner__heading {
 font-size: 36px;
 color: @white-color;
 line-height: 36px;
+.list-reset;
+font-weight: 400;
+ padding-top: 28px;
 }
 
 .banner__description {
 text-transform: uppercase;
 color: @white-color;
+.list-reset;
+padding-top: 29px;
 }
 
 
 .banner__logo {
+	padding-top: 26px;
 
 }
 
@@ -28,7 +38,108 @@ color: @white-color;
 	background-color:@green-color;
 	text-transform: uppercase;
 	color:@white-color;
+	display: inline-block;
+    padding: 10px 15px;
+    width: 280px;
 }
+
+@media (min-width: @tablet-width) {
+.banner{
+	
+
+}
+  
+.banner__container {
+	padding-left: 90px;
+    padding-top: 62px;
+    background-color: white;
+	width: 708px;
+	background-image: none;
+	text-align: left;
+}
+
+
+
+.banner__heading {
+font-size: 36px;
+color: @black-color;
+line-height: 36px;
+.list-reset;
+font-weight: 400;
+ padding-top: 28px;
+ width: 427px;
+}
+
+
+.banner__description {
+text-transform: uppercase;
+color: @black-color;
+.list-reset;
+padding-top: 29px;
+}
+
+}
+
+
+@media (min-width: @desktop-width) {
+	.banner{
+	
+
+
+}
+
+.banner__container {
+	width: 1220px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin: 0 auto;
+	background-color: white;
+	background-image: none;
+	text-align: left;
+
+	
+}
+
+
+.banner__section {
+	width: 896px;
+	margin-bottom: 109px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
