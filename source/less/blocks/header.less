@@ -1,7 +1,38 @@
-.page-header {
- 
-}
+.page-header {}
+
 .page-header__wrapper {
 	width: 320px;
 	margin: 0 auto;
+}
+
+.page-header__logo {
+	height: 67px;
+}
+
+@media (min-width: @tablet-width) {
+	.page-header {}
+	.page-header__wrapper {
+		width: 768px;
+		margin: 0 auto;
+		display: flex;
+	}
+	.page-header__logo {
+		height: 85px;
+		max-width: 174px;
+	}
+	.page-header__toggle {
+		display: none;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.page-header {}
+	.page-header__wrapper {
+		padding-left: 40px;
+		padding-right: 40px;
+		width: 1220px;
+	}
+	.main-nav__wrapper {
+		width: 610px;
+	}
 }

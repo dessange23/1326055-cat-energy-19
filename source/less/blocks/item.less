@@ -1,17 +1,15 @@
-
-.item 
-{
-display: flex;
-
+.item {
+	display: flex;
+	padding: 0 20px;
 }
 
 .item__heading {
-font-size: 16px;
-line-height: 20px;
+	font-size: 16px;
+	line-height: 20px;
 }
 
 .item__heading-link {
-color:@black-color;
+	color: @black-color;
 }
 
 .item__options {
@@ -20,10 +18,23 @@ color:@black-color;
 }
 
 .item__button {
-font-size:16px;
-line-height:20px;
-text-transform: uppercase;
-background-color:@green-color;
-color: #ffffff;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	background-color: @green-color;
+	color: #ffffff;
+}
 
+@media (min-width: @tablet-width) {
+	.item {
+		width: 324px;
+		padding: 0;
+	}
+}
+
+@media (min-width: @desktop-width) {
+	.item {
+		width: 245px;
+		padding: 0;
+	}
 }

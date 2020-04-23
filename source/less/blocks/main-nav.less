@@ -1,13 +1,19 @@
-
-.main-nav
-{
+.main-nav {
 	font-size: 20px;
- line-height: 24.86px;
- text-transform: uppercase;
+	line-height: 24.86px;
+	text-transform: uppercase;
 }
 
 .main-nav__wrapper {
 	width: 320px;
 	margin: 0 auto;
+}
 
+@media (min-width: @tablet-width) {
+	.main-nav__wrapper {}
+	.main-nav {
+		font-size: 18px;
+		line-height: 24.86px;
+		margin-left: auto;
+	}
 }
