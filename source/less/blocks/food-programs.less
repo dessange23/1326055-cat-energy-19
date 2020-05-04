@@ -7,6 +7,10 @@
 
 .food-programs__get-slim {
 	background-color: @gray-color;
+    padding: 29px 20px 20px;
+    width: 240px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .food-programs__get-slim--cat {}
@@ -16,9 +20,80 @@
 	line-height: 37.02px;
 	color: @black-color;
 	text-transform: uppercase;
+	font-family: "Oswald Regular","Arial",sans-serif;
+    font-size: 24px;
+    line-height: 37px;
+    color: #111;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 72px;
+    margin: 0 0 30px;
 }
 
-.food-programs__description {}
+.food-programs__description {
+	font-family: "Arial",sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #444;
+    border-bottom: 1px solid #d9d9d9;
+    margin: 0 0 20px;
+    padding-bottom: 22px;
+}
+
+
+.food-programs__icon-weight svg {
+	width: 61px;
+	height: 49px;
+	position: absolute;
+	top: 24px;
+	left: 22px;
+}
+
+.food-programs__icon-weight::before {
+	content: "";
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	background-color:@green-color;
+	top: 24px;
+	border-radius: 50%;
+	left: 30px;
+}
+
+.food-programs__icon-slim svg {
+  width: 61px;
+ height: 49px;
+	position: absolute;
+	top: 24px;
+	left: 22px;
+}
+
+.food-programs__icon-slim::before {
+    content: "";
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	background-color:@green-color;
+	top: 24px;
+	border-radius: 50%;
+	left: 30px;
+  
+	
+}
+
+.food-programs__link::before {
+	content: "";
+    position: absolute;
+    right: 113px;
+    top: 50%;
+    width: 37px;
+    height: 12px;
+    background: url(../img/icon-right-arrow-long.svg) no-repeat center;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+
 
 .visually-hidden {
 	position: absolute;
@@ -31,12 +106,21 @@
 .food-programs__link {
 	color: @text-color;
 	text-transform: uppercase;
+	font-family: "Oswald Regular","Arial",sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
 }
 
 .food-programs__link--arrow {}
 
 .food-programs__weight-gain {
-	.food-programs__get-slim
+	.food-programs__get-slim;
+	position: relative;
 }
 
 .food-programs__weight-gain--panther {}

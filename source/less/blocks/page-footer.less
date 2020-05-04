@@ -9,11 +9,76 @@ background-color: @gray-color;
 	background-color: @gray-color;
 }
 
-.page-footer__logo {}
+.page-footer__logo {
+	display: block;
+    max-width: 135px;
+    margin: 0 auto;
+    padding: 35px 0 30px;
+}
 
-.page-footer__icon {}
+.page-footer__icon {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 76px;
+}
 
-.page-footer_social {}
+.page-footer__social {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.social__list {
+	display: flex;
+	.list-reset;
+	width: 127px;
+    justify-content: space-between;
+
+}
+
+.icon__academy {
+	font-family: "Arial",sans-serif;
+	font-size: 16px;
+	line-height: 16px;
+	color: #444;
+}
+
+
+.social__link--vk svg {
+width: 24px;
+height: 13px;
+}
+
+.social__link--instagram svg {
+width: 24px;
+height: 13px;
+}
+
+.social__link--facebook svg {
+width: 12px;
+height: 20px;
+}
+
+
+
+
+
+
+
+.icon__link svg {
+	width: 28px;
+	height: 36px;
+	fill: #666666;
+
+}
+
 
 @media (min-width: @tablet-width) {
 	.page-footer__wrapper {
