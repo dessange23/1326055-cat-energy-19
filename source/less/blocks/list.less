@@ -6,7 +6,6 @@
     font-size: 12px;
     line-height: 16px;
     color:@text-color;
-    padding: 0;
 }
 
 .list__value {
@@ -18,5 +17,54 @@
     font-size: 12px;
     line-height: 16px;
     color: @text-color;
-    padding: 0;
+}
+
+
+
+@media (min-width: @tablet-width) {
+
+.list__key {
+    font-size: 16px;
+    padding: 8px 0 7px;
+    width: 125px;
+    border-bottom: 1px solid @border-color;
+}
+
+.list__value {
+    font-size: 16px;
+    padding: 8px 0 7px;
+    width: 125px;
+    border-bottom: 1px solid @border-color;
+}
+
+
+
+
+
+}
+
+
+@media (min-width: @desktop-width) {
+    .list__key {
+    width: 85px;
+
+    }
+
+
+    .list__value {
+    width: 85px;
+
+    }
+
+
+    .item__options {
+       
+    }
+
+
+    .item__button {
+        width: 169px;
+    }
+
+
 }
