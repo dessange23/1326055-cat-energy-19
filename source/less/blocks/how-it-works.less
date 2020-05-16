@@ -87,15 +87,88 @@ background: url(../img/advantage-clock@1x.png);
 		padding: 0 30px;
 		margin: 0 auto;
 	}
-	.how-it-works__feature {
-		width: 354px;
-		margin-bottom: 138px;
-	}
-	.how-it-works__function-list {
-		display: flex;
-		flex-wrap: wrap;
-		.list-reset
-	}
+     
+    .how-it-works__heading {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 7px;
+    font-family: "Oswald Regular","Arial",sans-serif;
+    font-weight: 400;
+    padding-left: 0;
+    margin-bottom: 75px;
+    }
+
+
+    .how-it-works__feature {
+    	width: 324px;
+    	margin: 0;
+    	padding: 0;
+    	margin-bottom: 138px;
+    	position: relative;
+    }
+    .how-it-works__function-list {
+    	display: flex;
+    	flex-wrap: wrap;
+    	.list-reset;
+    	justify-content: space-between;
+    }
+
+     .how-it-works__text {
+     	width: 265px;
+     	font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 114px;
+     }
+
+     .how-it-works__feature--leaf::before,
+     .how-it-works__feature--pot::before,
+     .how-it-works__feature--cutlery::before,
+     .how-it-works__feature--clock::before {
+     	content: "";
+     	background-repeat: no-repeat;
+     	background-position: center;
+     	width: 80px;
+     	height: 80px;
+     	background-color: @green-color;
+     	position: absolute;
+     	left: 0px;
+        top: 0px;
+     }
+     
+
+     .how-it-works__feature::after {
+    content: "1";
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    left: 120px;
+    width: 70px;
+    height: 230px;
+    font-family: "Oswald Regular","Arial",sans-serif;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+
+     }
+
+      .how-it-works__feature:nth-child(2n)::after {
+     	    left: 110px;
+     	    content: "2";
+     }
+
+     .how-it-works__feature:nth-child(3n)::after {
+     	    left: 110px;
+     	    content: "3";
+     }
+
+     .how-it-works__feature:nth-child(4n)::after {
+     	    left: 110px;
+     	    content: "4";
+     }
+
+
+
 }
 
 @media (min-width: @desktop-width) {
@@ -113,5 +186,9 @@ background: url(../img/advantage-clock@1x.png);
 	.how-it-works__feature {
 		width: 245px;
 		min-height: 187px;
+	}
+
+	.how-it-works__heading {
+		margin-bottom: 63px;
 	}
 }

@@ -38,3 +38,107 @@
     top: 2px;
 }
 
+.comparisons__tog:hover::after,.comparisons__tog:focus::after{
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,.25);
+
+}
+
+.comparisons__tog:active::after {
+      border: 2px solid @green-color;	
+}
+
+
+.comparisons__btn:active {
+	border-bottom: none;
+
+}
+
+.comparisons__btn:hover,.comparisons__btn:focus {
+	border-bottom: 1px solid @border-color4;
+}
+
+
+
+@media (min-width: @tablet-width) {
+
+.comparisons {
+    width: 570px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comparisons__progress {
+	width: 428px;
+    height: 6px;
+    background-color: @comparisons-color;
+    border: 0;
+    margin-top: -5px;
+}
+
+.comparisons__tog {
+	background-color: transparent;
+    height: 34px;
+    width: 50%;
+}
+
+.comparisons__tog::before {
+	content: "";
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+	z-index: 2;
+    width: 8px;
+    height: 8px;
+    background-color: @green-color;
+    right: -5px;
+    top: -4px;
+
+}
+
+
+.comparisons__tog::after {
+	content: "";
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    top: -18px;
+    right: -18px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    border: 1px solid @comparisons-color;
+    background-color: @white-color;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+
+}
+
+
+.comparisons__btn {
+	font-size: 20px;
+    border-bottom: 1px dotted #bebebe;
+    padding-bottom: 6px;
+}
+
+.comparisons__btn:active {
+	border-bottom: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

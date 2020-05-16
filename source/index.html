@@ -11,22 +11,24 @@
       <header class="page-header">
          <div class="page-header__wrapper">
             <a class="page-header__logo">
-               <img class="page-header__logo-image" src="img/logo-mobile.svg" width="194" height="39" alt="мини-логотип">
+               <picture>
                <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-               <source media="(min-width: @tablet-width)" srcset="img/logo-tablet.svg">
+               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+               <img class="page-header__logo-image" src="img/logo-mobile.svg" width="194" height="66" alt="мини-логотип">
+               </picture>
             </a>
             <nav class="main-nav main-nav--closed main-nav--nojs">
                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
                </button>
                <div class="main-nav__wrapper">
                   <ul class="main-nav__list site-list">
-                     <li class="site-list__item site-list__item--active">
+                     <li class="site-list__item site-list__item--active site-list__item--white site-list__item--active-white">
                         <a>Главная</a>
                      </li>
-                     <li class="site-list__item">
+                     <li class="site-list__item site-list__item--white">
                         <a href="catalog.html">Каталог продукции</a>
                      </li>
-                     <li class="site-list__item site-list__item--reset ">
+                     <li class="site-list__item site-list__item--reset site-list__item--white">
                         <a href="form.html">Подбор программы
                         </a>
                      </li>
@@ -41,18 +43,22 @@
                <div class="banner__section">
                   <h1 class="banner__heading">Функциональное питание для котов</h1>
                   <p class="banner__description">Занялся собой? займись котом!</p>
-                  <img class="banner__logo" src="img/index-can-mobile@1x.png" width="#" height="#" 
-                     alt="ведерко с кошачьим кормом">
-                  <a href="form.html" class="banner__open-form">Подобрать программу</a>
+                  <picture>
+                   <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+                     <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+                        <img class="banner__logo" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="709" height="635" 
+                        alt="ведерко с кошачьим кормом">
+                     </picture>
+                     <a href="form.html" class="banner__open-form">Подобрать программу</a>
+                  </div>
                </div>
             </div>
-         </div>
          <section class="food-programs">
             <div class="food-programs__container">
                <h2 class="visually-hidden">Программы нашего питания</h2>
                <div class="food-programs__get-slim food-programs__get-slim--cat">
                   <h3 class="food-programs__result">Похудение</h3>
-                  <p class="food-programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                  <p class="food-programs__description food-programs__description--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                   <picture class="food-programs__icon-slim">
                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 70 97" style="enable-background:new 0 0 70 97;" xml:space="preserve">
                         <g>
@@ -76,7 +82,7 @@
                </div>
                <div class="food-programs__weight-gain food-programs__weight-gain--panther">
                   <h3 class="food-programs__result">Набор массы</h3>
-                  <p class="food-programs__description">Заработать авторитет среди дворовых котов и даже собак?
+                  <p class="food-programs__description food-programs__description--weight">Заработать авторитет среди дворовых котов и даже собак?
                      Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!   
                   </p>
                   <picture class="food-programs__icon-weight">
@@ -114,50 +120,61 @@
                <h2 class="how-it-works__heading">Как это работает</h2>
                <ul class="how-it-works__function-list">
                   <li class="how-it-works__feature how-it-works__feature--leaf">
-                     Функциональное питание содержит только полезные питательные вещества.
+                     <p class="how-it-works__text">Функциональное питание содержит только полезные питательные вещества.</p>
                   </li>
-                  <li class="how-it-works__feature how-it-works__feature--pot">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-                  <li class="how-it-works__feature how-it-works__feature--cutlery">Замените один-два приема обычной еды на наше функциональное питание.</li>
-                  <li class="how-it-works__feature how-it-works__feature--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+                  <li class="how-it-works__feature how-it-works__feature--pot">
+                     <p class="how-it-works__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+                  </li>
+                  <li class="how-it-works__feature how-it-works__feature--cutlery">
+                   <p class="how-it-works__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+                </li>
+                <li class="how-it-works__feature how-it-works__feature--clock">
+                  <p class="how-it-works__text">Уже через месяц наслаждайтесь изменениями к лучшему <br>вашего питомца!</p></li>
                </ul>
             </div>
          </section>
          <section class="example">
             <div class="example__container">
-               <h2 class="example__heading">Живой пример</h2>
-               <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-               <dl class="example__list">
-                  <div class="example__item">
-                     <dt class="example__item-title">5 кг</dt>
-                     <dd class="example__item-subtitle">снижение веса</dd>
-                  </div>
-                  <div class="example__item">
-                     <dt class="example__item-title">60 дней</dt>
-                     <dd class="example__item-subtitle">затрачено времени</dd>
-                  </div>
-               </dl>
-               <p class="example__prise">Затраты на питание:15 000 РУБ</p>
-               <div class="example__cat">
-                  <picture>
-                     <img class="example__photo" src="img/before-mobile@1x.png" width="233" height="227" alt="фото кота">
-                  </picture>
-               </div>
-               <div class="comparisons">
-                  <button class="comparisons__btn">Было</button>
-                  <div class="comparisons__progress">
-                     <div class="comparisons__tog"></div>
-                  </div>
-                  <button class="comparisons__btn">Стало</button>
-               </div>
+               <div class="example__wrapper">
+                <h2 class="example__heading">Живой пример</h2>
+                <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+                <div class="example__price-wrapper">
+                   <dl class="example__list">
+                      <div class="example__item">
+                         <dt class="example__item-title">5 кг</dt>
+                         <dd class="example__item-subtitle">снижение веса</dd>
+                      </div>
+                      <div class="example__item">
+                         <dt class="example__item-title">60 дней</dt>
+                         <dd class="example__item-subtitle">затрачено времени</dd>
+                      </div>
+                   </dl>
+                   <p class="example__prise">Затраты на питание:<span>15 000 РУБ</span></p>
+                </div>
+             </div>
+             <div class="example__big-wrapper">
+              <div class="example__cat">
+               <picture>
+                  <img class="example__photo" src="img/before-mobile@1x.png" width="233" height="227" alt="фото кота">
+               </picture>
             </div>
+            <div class="comparisons">
+               <button class="comparisons__btn">Было</button>
+               <div class="comparisons__progress">
+                  <div class="comparisons__tog"></div>
+               </div>
+               <button class="comparisons__btn">Стало</button>
+            </div>
+         </div>
+      </div>
          </section>
          <section class="invitation">
-            <div class="container container--ident">
+            <div class="container--ident">
                <h2 class="invitation__title">приглашаем <br> к сотрудничеству  дилеров!</h2>
-               <p class="invitation__text">ул. Большая Конюшенная, д. 19/8  <span>Санкт-Петербург</span></p>
+               <p class="invitation__text">ул. Большая Конюшенная, д. 19/8  <span class="invitation__city">Санкт-Петербург</span></p>
             </div>
             <div class="map" id="map">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.320894615651014!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523735281602"  allowfullscreen></iframe>
+               <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.320894615651014!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523735281602"  allowfullscreen></iframe>
             </div>
          </section>
       </main>
@@ -193,9 +210,6 @@
                      <a class="social__link social__link--instagram">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                            viewBox="0 0 16.1 16" style="enable-background:new 0 0 16.1 16;" xml:space="preserve">
-                           <style type="text/css">
-                              .st0{fill:#231F20;}
-                           </style>
                            <path class="st0" d="M11.8,1C13.6,1,15,2.4,15,4.2v7.7c0,1.7-1.4,3.1-3.1,3.1H4.2C2.4,15,1,13.6,1,11.8V4.2C1,2.4,2.4,1,4.2,1H11.8
                               M11.8,0H4.2C1.9,0,0,1.9,0,4.2v7.7C0,14.1,1.9,16,4.2,16h7.7c2.3,0,4.2-1.9,4.2-4.2V4.2C16,1.9,14.1,0,11.8,0z"/>
                            <path class="st0" d="M8,4.9c1.7,0,3.1,1.4,3.1,3.1S9.7,11.1,8,11.1S4.9,9.7,4.9,8S6.3,4.9,8,4.9 M8,3.9C5.7,3.9,3.9,5.7,3.9,8
@@ -207,7 +221,7 @@
                   <li class="social__item">
                      <a class="social__link social__link--facebook">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                           viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
+                           viewBox="0 0 10 19"  xml:space="preserve">
                            <path d="M7.1,19H2v-8.8H0V5.8h1.9C1.8,3.8,2.1,2.4,3,1.4C3.8,0.5,5,0.1,6.5,0H10v4.2H7.2C7.1,4.4,7,5,7,5.8h3v4.4H7.1V19z M3.1,18
                               h2.8V9.1h2.9V6.8H5.9V6.3c0-1.4,0-2.6,0.7-3.1l0.1-0.1h2.1V1H6.5c-1.2,0.1-2,0.4-2.6,1c-0.8,0.8-1,2.3-0.8,4.2l0.1,0.6H1.1v2.3h2V18
                               z"/>
