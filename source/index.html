@@ -14,7 +14,7 @@
                <picture>
                <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-               <img class="page-header__logo-image" src="img/logo-mobile.svg" width="194" height="66" alt="мини-логотип">
+               <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="66" alt="мини-логотип">
                </picture>
             </a>
             <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -43,10 +43,10 @@
                <div class="banner__section">
                   <h1 class="banner__heading">Функциональное питание для котов</h1>
                   <p class="banner__description">Занялся собой? займись котом!</p>
-                  <picture>
-                   <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
-                     <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
-                        <img class="banner__logo" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="709" height="635" 
+                    <picture>
+                        <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
+                        <img class="banner__logo" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
                         alt="ведерко с кошачьим кормом">
                      </picture>
                      <a href="form.html" class="banner__open-form">Подобрать программу</a>
@@ -78,14 +78,14 @@
                         </g>
                      </svg>
                   </picture>
-                  <a href="catalog.html#slim" class="food-programs__link food-programs__link--arrow">Каталог slim</a>
+                  <a href="catalog.html#slim" class="food-programs__link food-programs__link--1">Каталог slim</a>
                </div>
                <div class="food-programs__weight-gain food-programs__weight-gain--panther">
                   <h3 class="food-programs__result">Набор массы</h3>
                   <p class="food-programs__description food-programs__description--weight">Заработать авторитет среди дворовых котов и даже собак?
                      Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!   
                   </p>
-                  <picture class="food-programs__icon-weight">
+                  <div class="food-programs__icon-weight">
                      <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 134 56" style="enable-background:new 0 0 134 56;" xml:space="preserve">
                         <g>
                            <path
@@ -110,8 +110,8 @@
                               c4,0.8,8,1.8,11.9,2.8c2.2,0.5,4.7,0.3,7-0.2c4.4-1,8.9-1.9,13.4-2c3-0.1,5.9,0.4,8.6,1.7C123.6,3.9,123.6,3.9,123.1,5.8z"/>
                         </g>
                      </svg>
-                  </picture>
-                  <a href="catalog.html#pro" class="food-programs__link food-programs__link--arrow">Каталог pro</a>
+                  </div>
+                  <a href="catalog.html#pro" class="food-programs__link food-programs__link--arrow2">Каталог pro</a>
                </div>
             </div>
          </section>
@@ -129,12 +129,12 @@
                    <p class="how-it-works__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
                 </li>
                 <li class="how-it-works__feature how-it-works__feature--clock">
-                  <p class="how-it-works__text">Уже через месяц наслаждайтесь изменениями к лучшему <br>вашего питомца!</p></li>
+                  <p class="how-it-works__text">Уже через месяц наслаждайтесь изменениями к лучшему <span>вашего питомца!</span> </p></li>
                </ul>
             </div>
          </section>
          <section class="example">
-            <div class="example__container">
+            <div class="example__container example__container--ident">
                <div class="example__wrapper">
                 <h2 class="example__heading">Живой пример</h2>
                 <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
@@ -149,13 +149,15 @@
                          <dd class="example__item-subtitle">затрачено времени</dd>
                       </div>
                    </dl>
-                   <p class="example__prise">Затраты на питание:<span>15 000 РУБ</span></p>
+                   <p class="example__prise">Затраты на питание  :<span>15 000 РУБ</span></p>
                 </div>
              </div>
              <div class="example__big-wrapper">
               <div class="example__cat">
                <picture>
-                  <img class="example__photo" src="img/before-mobile@1x.png" width="233" height="227" alt="фото кота">
+                   <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x ">
+                  <img class="example__photo" src="img/before-mobile@1x.png 1x" srcset="img/before-mobile@2x.png 2x" width="311" height="232" alt="фото кота">
                </picture>
             </div>
             <div class="comparisons">
@@ -169,7 +171,7 @@
       </div>
          </section>
          <section class="invitation">
-            <div class="container--ident">
+            <div class="invitation__container">
                <h2 class="invitation__title">приглашаем <br> к сотрудничеству  дилеров!</h2>
                <p class="invitation__text">ул. Большая Конюшенная, д. 19/8  <span class="invitation__city">Санкт-Петербург</span></p>
             </div>

@@ -1,26 +1,29 @@
 .example__container {
-	padding: 0 20px 34px;
-	width: 320px;
+    padding: 0 20px 34px;
+    width: 320px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
+.example__container--ident {}
+
 .example {
-background-color: @gray-color;
+    background-color: @gray-color;
 }
 
 .example__heading {
-	font-family: "Oswald Regular","Arial",sans-serif;
+    font-family: "Oswald Regular", "Arial", sans-serif;
     font-size: 36px;
     line-height: 60px;
     font-weight: 400;
     color: @black-color;
     margin: 0 0 23px;
-    padding-top: 17px;
+    padding-top: 36px;
+    padding-top: 18px;
 }
 
 .example__description {
-	font-family: "Arial",sans-serif;
+    font-family: "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: @text-color;
@@ -29,7 +32,7 @@ background-color: @gray-color;
 }
 
 .example__list {
-	list-style: none;
+    list-style: none;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -37,7 +40,7 @@ background-color: @gray-color;
 }
 
 .example__item {
-	width: 122px;
+    width: 122px;
     text-align: center;
     padding: 13px 0 18px;
     border: 1px solid #cdcdcd;
@@ -46,7 +49,7 @@ background-color: @gray-color;
 }
 
 .example__item-title {
-	font-family: "Oswald Regular","Arial",sans-serif;
+    font-family: "Oswald Regular", "Arial", sans-serif;
     font-size: 24px;
     line-height: 24px;
     color: @black-color;
@@ -55,7 +58,7 @@ background-color: @gray-color;
 }
 
 .example__item-subtitle {
-    font-family: "Arial",sans-serif;
+    font-family: "Arial", sans-serif;
     font-size: 12px;
     line-height: 12px;
     color: #444;
@@ -72,171 +75,174 @@ background-color: @gray-color;
 }
 
 .example__prise {
-    font-family: "Oswald Regular","Arial",sans-serif;
+    font-family: "Oswald Regular", "Arial", sans-serif;
     font-size: 14px;
     line-height: 20px;
     color: @black-color;
     text-transform: uppercase;
     text-align: center;
     margin: 0 0 0 3px;
+    padding-right: 7px;
 }
 
 .example__photo {
-	left: -19px;
+    left: -19px;
     top: -3px;
     position: relative;
     margin-top: 37px;
-    margin-bottom: 226px;
-    width: 320px;
+    min-width: 320px;
     height: 240px;
 }
 
-
-
 @media (min-width: @tablet-width) {
-
-
     .example {
         background-color: @white-color;
     }
-
     .example__price-wrapper {
         display: flex;
         width: 708px;
         margin: 0 auto;
     }
-
-
-
     .example__container {
         border-top: 1px solid #e6e6e6;
-        padding: 0 30px 70px;
+        padding: 0px 9px 74px;
         width: 724px;
     }
-
     .example__heading {
         font-size: 60px;
         line-height: 60px;
-        padding-top: 42px;
+        padding-top: 16px;
         margin-bottom: 65px;
     }
-
     .example__description {
         font-size: 16px;
         line-height: 24px;
         width: 700px;
         margin-bottom: 52px;
     }
-
     .example__list {
         display: flex;
-    justify-content: space-between;
-    width: 408px;
+        justify-content: space-between;
+        width: 408px;
     }
-
     .example__item {
         width: 164px;
         margin-right: 40px;
     }
-
-    .example__item-title{
+    .example__item-title {
         font-size: 30px;
-    line-height: 37px;
-
+        line-height: 37px;
     }
-
-    .example__item-subtitle{
-            font-size: 14px;
-    line-height: 14px;
-    white-space: nowrap;
-    bottom: -8px;
-    background-color: #fff;
-
+    .example__item-subtitle {
+        font-size: 14px;
+        line-height: 14px;
+        white-space: nowrap;
+        bottom: -8px;
+        background-color: #fff;
     }
-
     .example__prise {
         width: 192px;
         margin: 0 0 0 auto;
-    font-size: 20px;
-    text-align: right;
-    padding-top: 8px;
-    line-height: 29px;
+        font-size: 20px;
+        text-align: right;
+        padding-top: 8px;
+        line-height: 29px;
     }
-
-
     @media (min-width: @desktop-width) {
+        .example__container {
+            width: 1300px;
+            padding: 0 40px;
+            min-height: 590px;
+            border: 0;
+            display: flex;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 8px;
+        }
 
-     .example__container {
-        width: 1300px;
-        padding: 0 40px;
-        min-height: 590px;
-        border:0;
-        display: flex;
-     }
+
+        .example__cat {
+            position: relative;
+        }
+
+        .example__cat::before {
+           content: "";
+           width: 326px;
+           height: 643px;
+           background: url(../img/after-desktop@1x.png);
+           position: absolute;
+           left: 392px;
+           top: -48px;
+           background-position: -365px;
+           background-position-y: 1px;
+           z-index: 1;
+           background-color: #eaeaea;
+           background-repeat: no-repeat;
+       }
 
 
-     .example__wrapper {
+
+
+       .example__wrapper {
         width: 50%;
-     }
+        }
+        .example__heading {
+            margin-bottom: 146px;
+            padding: 9px 0 0;
+        }
+        .example__description {
+            margin-bottom: 68px;
+            width: 435px;
+        }
+        .example__price-wrapper {
+            width: 435px;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        .example__list {
+            margin-bottom: 48px;
+        }
+        .example__prise {
+            width: 435px;
+            text-align: left;
+        }
+        .example__prise span {
+            margin-left: 59px;
+        }
+
+        .example__photo {
+            left: 31px;
+            top: -87px;
+            position: relative;
+            margin-top: 37px;
+            min-width: 676px;
+            height: 522px;
+            min-width: 679px;
+        }
 
 
 
-     .example__heading {
-        margin-bottom: 146px;
-           padding: 9px 0 0;
+        .example {
+            position: relative;
+        }
+
+        .example::after {
+            content: "";
+            height: 461px;
+            position: absolute;
+            top: 139px;
+            background-color: #f2f2f2;
+            width: 1078px;
+
+
+
+        }
+
+        .example__item-subtitle {
+            background-color: #f2f2f2;
+        }
+
+
+
     }
-
-
-    .example__description {
-        margin-bottom: 68px;
-        width: 435px;
-    }
-
-
-    .example__price-wrapper {
-        width: 435px;
-        flex-wrap: wrap;
-        margin: 0;
-    }
-
-    .example__list {
-        margin-bottom: 48px;
-    }
-
-    .example__prise {
-        width: 435px;
-        text-align: left;
-    }
- 
-    .example__prise span {
-      margin-left: 59px;
-    }
-
-
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+ }

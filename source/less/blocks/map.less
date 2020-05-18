@@ -1,49 +1,47 @@
-.map{
-    background-color: @gray-color;
-    background-image: url(../img/bg-map-mobile@1x.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    min-width: 320px;
-    width: 100%;
-    height: 365px;
-    position: relative;
+.map {
+	background-color: @gray-color;
+	background-image: url(../img/bg-map-mobile@1x.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 320px;
+	width: 100%;
+	height: 365px;
+	position: relative;
 }
-
 
 .map__frame {
 	width: 100%;
-    border: none;
-    height: 402px;
-
-
+	border: none;
+	height: 367px;
 }
-
 
 @media (min-width: @tablet-width) {
 	.map {
-	background-color: @gray-color;
-    background-image: url(../img/bg-map-tablet@1x.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    min-width: 768px;
-    width: 100%;
-    height: 403px;
-    position: relative;
+		background-color: @gray-color;
+		background-image: url(../img/bg-map-tablet@1x.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		min-width: 768px;
+		width: 100%;
+		height: 406px;
+		position: relative;
 	}
-
+	.map__frame {
+		width: 100%;
+		border: none;
+		height: 406px;
+	}
 }
-
 
 @media (min-width: @desktop-width) {
 	.map {
-	background-color: @gray-color;
-    background-image: url(../img/bg-map-desktop@1x.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    min-width: 1300px;
-    width: 100%;
-    height: 403px;
-    position: relative;
-
+		background-color: @gray-color;
+		background-image: url(../img/bg-map-desktop@1x.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		min-width: 1300px;
+		width: 100%;
+		height: 414px;
+		position: relative;
 	}
 }

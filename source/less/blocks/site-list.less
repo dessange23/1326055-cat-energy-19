@@ -4,18 +4,18 @@
 
 .site-list__item a {
 	color: @black-color;
-	font-family: "Oswald Medium","Arial",sans-serif;
-    font-size: 20px;
-    line-height: 20px;
-    color: @black-color;
-    text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
-    display: block;
-    width: 100%;
-    padding: 22px 0;
-    text-align: center;
-    border-top: 1px solid @border-color2;
+	font-family: "Oswald Medium", "Arial", sans-serif;
+	font-size: 20px;
+	line-height: 20px;
+	color: @black-color;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	display: block;
+	width: 100%;
+	padding: 22px 0;
+	text-align: center;
+	border-top: 1px solid @border-color2;
 }
 
 .site-list {
@@ -41,41 +41,31 @@
 		justify-content: space-between;
 		width: 440px;
 	}
-
-
-	.site-list__item:focus, .site-list__item:hover {
+	.site-list__item:focus,
+	.site-list__item:hover {
 		opacity: .6;
 		outline: none;
 	}
-
 	.site-list__item:active {
 		opacity: .3;
 		position: relative;
 	}
-     
-
-    .site-list__item a {
-		font-family: "Oswald","Arial",sans-serif;
+	.site-list__item a {
+		font-family: "Oswald", "Arial", sans-serif;
 		font-size: 18px;
 		line-height: 25px;
 		color: #222;
 		border: 0;
 	}
-
 	.site-list__item--active::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    bottom: 13px;
-    height: 2px;
-    background-color: @green-color;
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		bottom: 13px;
+		height: 2px;
+		background-color: @green-color;
 	}
-
-
-
-
-
 }
 
 @media (min-width: @desktop-width) {
@@ -88,19 +78,13 @@
 		justify-content: space-between;
 		width: 481px;
 	}
-
-
 	.site-list__item a {
 		font-size: 20px;
 		line-height: 25px;
-
 	}
-
-
 	.site-list__item--white a {
 		color: @white-color;
 	}
-
 	.site-list__item--active-white::before {
 		content: "";
 		position: absolute;
@@ -109,8 +93,5 @@
 		bottom: 13px;
 		height: 2px;
 		background-color: @white-color;
-		
 	}
-
-
 }
