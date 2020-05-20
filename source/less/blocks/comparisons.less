@@ -12,7 +12,7 @@
     background-color: transparent;
     border: 0;
     padding: 0;
-    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
@@ -67,7 +67,12 @@
         justify-content: space-between;
         align-items: center;
         padding-top: 312px;
+        position: absolute;
+    top: 281px;
+    left: 64px;
     }
+
+
     .comparisons__progress {
         width: 428px;
         height: 6px;
@@ -121,13 +126,17 @@
 
 @media (min-width: @desktop-width)  {
     .comparisons {
-      width: 577px;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 3;
-      padding: 0;
-      position: absolute;
-      bottom: 53px;
-      right: 40px;
+  width: 577px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 3;
+    padding: 0;
+    position: absolute;
+    bottom: -24px;
+    left: 684px;
   }
 }

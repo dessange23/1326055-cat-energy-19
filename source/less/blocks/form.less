@@ -1,5 +1,5 @@
 .form__heading {
-    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 36px;
     line-height: 60px;
     font-weight: 400;
@@ -21,7 +21,7 @@
 }
 
 .form__legend {
-    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: @black-color;
@@ -60,7 +60,7 @@
 
 .form__label,
 .form__input-text {
-    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: @form-color;
@@ -299,7 +299,7 @@
     min-height: 150px;
     padding: 13px;
     border: 1px solid rgba(205, 205, 205, .5);
-    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: @border-color2;
@@ -483,13 +483,24 @@
     outline: none;
 }
 
-.form__input-mail:focus,
-.form__input-mail:invalid +.form__button-mail svg,
-{
-    fill: @red-color;
-    border: none;
-    box-shadow: inset 0 0 0 2px @red-color;
-    outline: none;
+.form__input-mail:invalid:focus~.form__button-mail svg {
+    fill: red;
+}
+
+.form__input-mail:focus {
+    outline: 2px solid red;
+}
+
+.form__input-phone:invalid:focus~.form__button-phone svg {
+    fill: red;
+}
+
+.form__input-phone:invalid:focus {
+    outline: 2px solid red;
+}
+
+.form__input-phone:focus {
+    outline: 2px solid red;
 }
 
 .form__input-phone:active {
@@ -508,18 +519,12 @@
     outline: none;
 }
 
-.form__input-phone:focus,
-.form__input-phone:invalid+.form__button-phone svg,
-{
-    fill: @red-color;
-    border: none;
-    box-shadow: inset 0 0 0 2px @red-color;
-    outline: none;
-}
+
 
 @media (min-width: @tablet-width) {
     .form {
         border-top: none;
+        margin-bottom: 10px;
     }
     .form__heading {
         font-size: 60px;

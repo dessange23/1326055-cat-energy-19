@@ -3,3 +3,154 @@
 .social__list {
 	list-style: none;
 }
+
+
+.social__list {
+    display: flex;
+    .list-reset;
+    width: 127px;
+    justify-content: space-between;
+}
+.social__list {
+    position: relative;
+}
+
+.social__link--vk svg {
+    width: 24px;
+    height: 13px;
+    fill: @svg-color;
+    position: absolute;
+    left: -5px;
+    top: -4px;
+}
+
+.social__link--instagram svg {
+    width: 28px;
+    height: 16px;
+    fill: #666666;
+    position: absolute;
+    top: -6px;
+    left: 49px;
+}
+
+.social__link--facebook svg {
+    width: 12px;
+    height: 20px;
+    fill: @svg-color;
+    position: absolute;
+    top: -8px;
+    right: 5px;
+}
+
+.social__link svg:hover,
+.social__link svg:focus {
+    fill: @green-color;
+}
+
+.social__link svg:active {
+    opacity: .3;
+}
+
+
+@media (min-width: @tablet-width){
+	 .social__item {
+        position: relative;
+    }
+    .icon__link {
+        position: relative;
+    }
+    .social__link--vk svg {
+        width: 31px;
+        height: 17px;
+        fill: @svg-color;
+    }
+    .social__link--instagram svg {
+        width: 24px;
+        height: 24px;
+        fill: @svg-color;
+        position: absolute;
+        top: 0px;
+        left: -14px;
+    }
+    .social__link--facebook svg {
+        width: 18px;
+        height: 30px;
+        fill: @svg-color;
+        top: 0px;
+        right: -19px;
+    }
+    .social__link--vk {
+        top: 5px;
+        position: absolute;
+        left: -2px;
+    }
+    .social__link--instagram {
+        position: absolute;
+        top: -1px;
+        left: 3px;
+    }
+    .social__link--facebook {
+        top: -5px;
+        left: -26px;
+        position: absolute;
+    }
+
+}
+
+@media(min-width: @desktop-width){
+	.social__link--vk {
+        top: 1px;
+        left: -45px;
+        left: 36px;
+        top: -8px;
+    }
+    .social__link--vk svg {
+        left: -44px;
+        top: 3px;
+
+    }
+    .social__link--instagram svg {
+      top: -9px;
+    left: -34px;
+    }
+    .social__link--facebook svg {
+     top: -5px;
+    right: -55px;
+    }
+    .social__link--facebook {
+        top: -6px;
+        left: -64px;
+    }
+
+
+
+
+    .social__link--vk {
+        top: 1px;
+        left: -45px;
+        left: 36px;
+        top: -8px;
+    }
+    .social__link--vk svg {
+        left: -44px;
+        top: 3px;
+
+    }
+    .social__link--instagram svg {
+      top: -6px;
+    left: -34px;
+    }
+    .social__link--facebook svg {
+     top: -5px;
+    right: -55px;
+    }
+    .social__link--facebook {
+        top: -6px;
+        left: -64px;
+    }
+   .social__link--instagram {
+        position: absolute;
+        top: -1px;
+        left: 21px;
+    }
+}

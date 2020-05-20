@@ -6,3 +6,66 @@
 }
 
 .icon__link {}
+
+.icon__link {
+    position: relative;
+    right: 35px;
+}
+
+.icon__link svg {
+    width: 45px;
+    height: 41px;
+    fill: @icon-color;
+    position: absolute;
+    top: -18px;
+    left: -1px;
+}
+.icon__academy:active {
+    opacity: .3;
+}
+
+.icon__link svg:active {
+    fill: @green-color;
+    opacity: .3;
+}
+
+.icon__link svg:focus,
+.icon__link svg:hover {
+    fill: @green-color;
+}
+
+@media (min-width: @tablet-width){
+
+.icon__academy {
+        margin-left: 28px;
+    }
+.icon__link {
+        position: relative;
+    }
+
+}
+
+@media (min-width: @desktop-width) {
+	  .icon__academy {
+        margin-left: 160px;
+        margin-bottom: 17px;
+            padding-top: 8px;
+    }
+    .icon__link {
+        position: relative;
+        right: 20px;
+    }
+    .icon__link svg {
+        position: absolute;
+        width: 44px;
+        height: 43px;
+        fill: #666666;
+        left: -15px;
+        top: -27px;
+    }
+    .social__link--instagram {
+        position: absolute;
+        top: -1px;
+        left: 21px;
+    }
+}
