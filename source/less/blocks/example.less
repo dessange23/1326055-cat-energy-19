@@ -1,8 +1,8 @@
 .example__container {
-  padding: 0 20px 34px;
-  width: 320px;
-  margin-top: 74px;
-  box-sizing: border-box;
+    padding: 0 20px 34px;
+    width: 320px;
+    margin-top: 74px;
+    box-sizing: border-box;
 }
 
 .example__container--ident {
@@ -13,15 +13,17 @@
 }
 
 .example__heading {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 36px;
-  line-height: 60px;
-  font-weight: 400;
-  color: @black-color;
-  margin: 0 0 23px;
-  padding-top: 36px;
-  padding-top: 18px;
-  margin: 0 0 -53px;
+
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 400;
+    color: @black-color;
+    margin: 0 0 23px;
+    padding-top: 36px;
+    padding-top: 18px;
+    margin: 0 0 -53px;
+    padding-left: 21px;
 }
 
 .example__description {
@@ -77,14 +79,15 @@
 }
 
 .example__prise {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: @black-color;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 0 0 3px;
-  padding-right: 7px;
+
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: @black-color;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 0 3px;
+    padding-right: 7px;
 }
 
 .example__photo {
@@ -220,11 +223,36 @@
       position: relative;
       z-index: 1;
       background: linear-gradient(to right, #f2f2f2 75%, #eaeaea 27.2%);
+
+     
+    }
+    .example__heading {
+        font-size: 60px;
+        line-height: 60px;
+        padding-top: 16px;
+        margin: 0;
+        display: inline;
+    }
+    .example__description {
+        font-size: 16px;
+        line-height: 24px;
+        width: 700px;
+        margin-bottom: 52px;
+    }
+    .example__list {
+        display: flex;
+        justify-content: space-between;
+        width: 408px;
+    }
+    .example__item {
+        width: 164px;
+        margin-right: 40px;
     }
   
     .example::before {
         display: none;
     }
+
 
   .example__cat {
     position: relative;
