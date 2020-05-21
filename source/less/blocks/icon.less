@@ -3,6 +3,7 @@
 .icon__academy {
 	font-size: 16px;
 	line-height: 16px;
+     font-family: Arial;
 }
 
 .icon__link {}
@@ -43,29 +44,39 @@
         position: relative;
     }
 
+    .icon__link svg {
+    width: 45px;
+    height: 41px;
+    fill: #666;
+    position: absolute;
+    top: -20px;
+    left: -1px;
+
+}
+}
+@media (min-width: @desktop-width) {
+ .icon__academy {
+    margin-left: 163px;
+    margin-bottom: 14px;
+    padding-top: 5px;
+    font-family: Arial;
+}
+.icon__link {
+    position: relative;
+    right: 20px;
+}
+.icon__link svg {
+    position: absolute;
+    width: 44px;
+    height: 43px;
+    fill: #666666;
+    left: -15px;
+    top: -27px;
+}
+.social__link--instagram {
+    position: absolute;
+    top: -1px;
+    left: 21px;
 }
 
-@media (min-width: @desktop-width) {
-	  .icon__academy {
-        margin-left: 160px;
-        margin-bottom: 17px;
-            padding-top: 8px;
-    }
-    .icon__link {
-        position: relative;
-        right: 20px;
-    }
-    .icon__link svg {
-        position: absolute;
-        width: 44px;
-        height: 43px;
-        fill: #666666;
-        left: -15px;
-        top: -27px;
-    }
-    .social__link--instagram {
-        position: absolute;
-        top: -1px;
-        left: 21px;
-    }
 }
