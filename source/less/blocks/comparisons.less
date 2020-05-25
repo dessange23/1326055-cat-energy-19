@@ -1,139 +1,146 @@
 .comparisons {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    align-items: baseline;
-    width: 205px;
-    margin: 0 auto;
-    padding-top: 26px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: baseline;
+  width: 205px;
+  margin: 0 auto;
+  padding-top: 26px;
 }
 
 .comparisons__btn {
-    background-color: transparent;
-    border: 0;
-    padding: 0;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    padding-right: 2px;
-    padding-left: 5px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-right: 2px;
+  padding-left: 5px;
 }
 
 .comparisons__progress {
-    width: 90px;
-    height: 13px;
-    border: 1px solid #cdcdcd;
-    background-color: #ffffff;
-    border-radius: 6px;
-    margin-left: 19px;
-    margin-right: 13px;
-    position: relative;
+  width: 90px;
+  height: 13px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  border-radius: 6px;
+  margin-left: 19px;
+  margin-right: 13px;
+  position: relative;
 }
 
 .comparisons__tog {
-    width: 35px;
-    height: 6px;
-    background-color: @green-color;
-    border-radius: 3px;
-    position: absolute;
-    left: 3px;
-    top: 2px;
+  width: 35px;
+  height: 6px;
+  background-color: @green-color;
+  border-radius: 3px;
+  position: absolute;
+  left: 3px;
+  top: 2px;
 }
 
 .comparisons__tog:hover::after,
 .comparisons__tog:focus::after {
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .25);
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
 .comparisons__tog:active::after {
-    border: 2px solid @green-color;
+  border: 2px solid @green-color;
 }
 
 .comparisons__btn:active {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .comparisons__btn:hover,
 .comparisons__btn:focus {
-    border-bottom: 1px solid @border-color4;
+  border-bottom: 1px solid @border-color4;
 }
 
 @media (min-width: @tablet-width) {
-    .comparisons {
-        justify-content: space-between;
-        align-items: center;
-        width: 577px;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 312px;
-        position: absolute;
-        bottom: -620px;
-        right: 25px;
-
-    }
-
-
-    .comparisons__progress {
-        width: 428px;
-        height: 6px;
-        background-color: @comparisons-color;
-        border: 0;
-        margin-top: -5px;
-    }
-    .comparisons__tog {
-        background-color: transparent;
-        height: 34px;
-        width: 50%;
-    }
-    .comparisons__tog::before {
-        content: "";
-        position: absolute;
-        border-radius: 50%;
-        cursor: pointer;
-        z-index: 2;
-        width: 8px;
-        height: 8px;
-        background-color: @green-color;
-        right: -5px;
-        top: -4px;
-    }
-    .comparisons__tog::after {
-        content: "";
-        position: absolute;
-        border-radius: 50%;
-        cursor: pointer;
-        top: -18px;
-        right: -18px;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        width: 34px;
-        height: 34px;
-        border: 1px solid @comparisons-color;
-        background-color: @white-color;
-        -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
-    }
-    .comparisons__btn {
-        font-size: 20px;
-        border-bottom: 1px dotted #bebebe;
-        padding-bottom: 6px;
-    }
-    .comparisons__btn:active {
-        border-bottom: none;
-    }
+  .comparisons {
+    justify-content: space-between;
+    align-items: center;
+    width: 577px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 312px;
+    position: absolute;
+    bottom: -616px;
+    right: 68px;
+  }
+  .comparisons__progress {
+    width: 428px;
+    height: 6px;
+    background-color: @comparisons-color;
+    border: 0;
+    margin-top: -5px;
+  }
+  .comparisons__tog {
+    background-color: transparent;
+    height: 34px;
+    width: 50%;
+  }
+  .comparisons__tog::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    width: 8px;
+    height: 8px;
+    background-color: @green-color;
+    right: -2px;
+    top: -4px;
+  }
+  .comparisons__tog::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    top: -18px;
+    right: -15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    border: 1px solid @comparisons-color;
+    background-color: @white-color;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  }
+  .comparisons__btn {
+    font-size: 20px;
+    border-bottom: 1px dotted #bebebe;
+    padding-bottom: 6px;
+  }
+  .comparisons__btn:active {
+    border-bottom: none;
+  }
 }
 
-
-@media (min-width: @desktop-width)  {
-    .comparisons {
-      width: 577px;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 3;
-      padding: 0;
-      position: absolute;
-      bottom: 59px;
-      right: 40px;
+@media (min-width: @desktop-width) {
+  .comparisons {
+    width: 577px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    position: absolute;
+    bottom: 59px;
+    right: 2px;
+    padding: 429px 0 0;
+    top: 2px;
+    margin-right: -2px;
+  }
+  .comparisons::before {
+    content: "";
+    width: 409px;
+    height: 459px;
+    position: absolute;
+    top: 49px;
+    left: 85px;
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
   }
 }

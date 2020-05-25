@@ -1,6 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
+var build = require('gulp-build');
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var less = require("gulp-less");
@@ -53,7 +54,6 @@ gulp.task("images", function(){
   return gulp.src("source/img/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("source/img"));
@@ -76,7 +76,9 @@ gulp.task("copy", function(){
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
-    "source/*.ico"
+    "source/*.ico",
+    "source/css/style.css",
+    "source/css/style.css.map"
   ], {
     base: "source"
   })
@@ -85,6 +87,7 @@ gulp.task("copy", function(){
 
 gulp.task("build", gulp.series(
   "clean",
+  "images",
   "copy",
   "css",
   "html"

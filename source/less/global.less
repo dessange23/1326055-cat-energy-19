@@ -1,53 +1,58 @@
 body {
-font-family: "Oswald","Arial", sans-serif;
-background-color:@white-color;
-line-height: 18px;
-font-size: 14px;
-color:@text-color;
-margin: 0;
-padding: 0;
-min-width: 320px;
-@media (min-width: @tablet-width)  {
- 
- }
-} 
+  font-family: "Oswald", "Arial", sans-serif;
+  background-color: @white-color;
+  line-height: 18px;
+  font-size: 14px;
+  color: @text-color;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  @media (min-width: @tablet-width) {}
+}
 
-a {text-decoration: none;}
+a {
+  text-decoration: none;
+}
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
- .visually-hidden {
-	position: absolute;
-	clip: rect(0 0 0 0);
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	}
 
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 *,
 *::before,
 *::after {
-	-webkit-box-sizing: inherit;
-	box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 @font-face {
- font-family: "Oswald"; 
- src: url("../fonts/oswaldregular.woff2") format("woff2"),
-      url("../fonts/oswaldregular.woff") format("woff");
- font-weight: 400;
- font-style: normal;
- font-display: swap;
-  }
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
- @font-face {
- font-family: "Oswald"; 
- src: url("../fonts/oswaldmedium.woff2") format("woff2"),
-      url("../fonts/oswaldmedium.woff") format("woff");
- font-weight: 500;
- font-style: normal;
- font-display: swap;
-  }
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,90 +1,120 @@
 .invitation__container {
-    display: flex;
-    padding: 30px 20px 25px;
-    box-sizing: border-box;
-    width: 320px;
-    margin: 0 auto;
-    background-color: #f2f2f2;
+  display: flex;
+  padding: 30px 20px 25px;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 .invitation__title {
-    text-transform: uppercase;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 16px;
-    color: @black-color;
-    line-height: 20px;
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 140px;
-    font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  color: @black-color;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 140px;
+  font-weight: 400;
 }
 
 .invitation__text {
-    font-family: "Arial", sans-serif;
-    font-size: 14px;
-    color: @text-color;
-    margin-left: auto;
-    line-height: 20px;
-    margin-top: 0;
-    margin-bottom: 0;
-    width: 140px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  color: @text-color;
+  margin-left: auto;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 140px;
 }
 
 .invitation {
-    position: relative;
-    background-color: #f2f2f2;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.invitation .invitation__wrapper--gray {
+  background-color: #f2f2f2;
+}
+
+.invitation__container--gray {
+  background-color: #f2f2f2;
 }
 
 @media (min-width: @tablet-width) {
-    .invitation {
-        background-color: @white-color;
-        background-color: #f2f2f2;
-    }
-    .invitation__container {
-        width: 768px;
-        padding: 65px 72px 56px;
-        background-color: #f2f2f2;
-    }
-    .invitation__title {
-        font-size: 20px;
-        line-height: 25px;
-        width: 170px;
-        font-weight: 400;
-    }
-    .invitation__text {
-        font-size: 16px;
-        width: 170px;
-        text-align: right;
-    }
-    .invitation__city {
-        margin-top: 18px;
-        display: block;
-    }
+  .invitation {
+    background-color: @white-color;
+    background-color: #f2f2f2;
+  }
+  .invitation__container {
+    width: 768px;
+    padding: 65px 72px 58px;
+    padding-left: 71px;
+    background-color: #fff;
+  }
+  .invitation__container--gray {
+    background-color: #f2f2f2;
+  }
+  .invitation__title {
+    font-size: 20px;
+    line-height: 25px;
+    width: 170px;
+    font-weight: 400;
+  }
+  .invitation__text {
+    font-size: 16px;
+    width: 170px;
+    text-align: right;
+  }
+  .invitation__city {
+    margin-top: 18px;
+    display: block;
+  }
+}
+
+@media (max-width: @tablet-width - 1) {
+  .invitation__wrapper {
+    background-color: #fff;
+  }
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+  .invitation__wrapper {
+    background-color: #fff;
+  }
 }
 
 @media (min-width: @desktop-width) {
-    .invitation__container {
-        box-sizing: border-box;
-        width: 570px;
-        padding: 65px 25px;
-        left: 87px;
-        top: 101px;
-        background-color: #ffffff;
-        height: 199px;
-        position: absolute;
-        z-index: 1;
-    }
-    .invitation__text {
-        text-align: left;
-        margin-left: 83px;
-    }
-    .invitation__city {
-        text-align: left;
-        margin-top: 20px;
-        display: block;
-    }
-    .invitation__title {
-        padding-left: 4px;
-        padding-top: 2px;
-    }
+  .invitation__container {
+    box-sizing: border-box;
+    width: 570px;
+    padding: 65px 72px;
+    left: 40px;
+    top: 96px;
+    background-color: #fff;
+    height: 201px;
+    position: absolute;
+    z-index: 1;
+  }
+  .invitation__wrapper {
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .invitation__text {
+    text-align: left;
+    margin-left: 83px;
+  }
+  .invitation__city {
+    text-align: left;
+    margin-top: 20px;
+    display: block;
+  }
+  .invitation__title {
+    padding-left: 4px;
+    padding-top: 2px;
+  }
+  .invitation {}
 }
